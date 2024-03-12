@@ -19,9 +19,11 @@ const TeamItem = ({ data }: Props) => {
           <AvatarFallback></AvatarFallback>
         </Avatar>
       </div>
-      <div className="flex-1 ">
-        <div>{data.name}</div>
-        <div className="text-sm text-muted-foreground">{data.email}</div>
+      <div className="flex-1 overflow-x-hidden">
+        <div className="truncate">{data.name}</div>
+        <div className="truncate text-sm text-muted-foreground ">
+          {data.email}
+        </div>
       </div>
       <div>
         <TeamCombobox value={role} setValue={setRole} />

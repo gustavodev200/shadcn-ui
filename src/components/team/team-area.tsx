@@ -11,7 +11,7 @@ import { members } from "@/api/members";
 
 const TeamArea = () => {
   return (
-    <Card>
+    <Card className="w-full max-w-2xl">
       <CardHeader>
         <CardTitle>Team Members</CardTitle>
         <CardDescription>
